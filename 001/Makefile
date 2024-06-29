@@ -12,3 +12,7 @@ run: main
 .PHONY: python
 python:
 	python3 main.py
+
+.PHONY: math
+math:
+	./main.mathematica
