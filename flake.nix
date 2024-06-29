@@ -22,6 +22,10 @@
         {
           devShells.default = pkgs.mkShell {
             inputsFrom = [ self'.packages.default ];
+            packages =
+              # for python stuff
+              with pkgs; [ python312 pyright ruff ]
+                ++ (with pkgs.python312Packages; [ numpy ]);
           };
 
           packages = {
