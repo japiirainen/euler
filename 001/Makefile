@@ -8,3 +8,7 @@ main: main.c
 .PHONY: run
 run: main
 	$(BIN)/main
+
+.PHONY: python
+python:
+	python3 main.py
