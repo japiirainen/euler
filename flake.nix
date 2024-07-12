@@ -43,7 +43,7 @@
 
               installPhase = ''
                 mkdir -p $out/bin
-                mv main $out/bin/${name}
+                mv bin/main $out/bin/${name}
               '';
             };
           };
