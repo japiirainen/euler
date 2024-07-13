@@ -25,7 +25,9 @@
             packages =
               # for python stuff
               with pkgs; [ python312 pyright ruff ]
-                ++ (with pkgs.python312Packages; [ numpy ]);
+                ++ (with pkgs.python312Packages; [ numpy ]) ++
+                # for c stuff
+                (with pkgs; [ gmp ]);
           };
 
           packages = {
