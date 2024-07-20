@@ -1,3 +1,3 @@
 #!/usr/bin/env wolframscript -cloud -print
 
-"not implemented."
+Total[IntegerDigits[100!]]
