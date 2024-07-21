@@ -4,13 +4,13 @@ BIN=./bin
 .PHONY: all
 all: run python math
 
-main: main.c
+main: main.cc
 	@mkdir -p bin
-	$(CC) $(CFLAGS) -o $(BIN)/main main.c
+	$(CXX) $(CFLAGS) -o $(BIN)/main main.cc
 
 .PHONY: run
 run: main
-	$(BIN)/main
+	cat names.txt | $(BIN)/main
 
 .PHONY: python
 python:
