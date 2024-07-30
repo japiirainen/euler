@@ -1,3 +1,3 @@
 #!/usr/bin/env wolframscript -cloud -print
 
-"not implemented"
+FromDigits[Permutations[Range[0, 9]][[1000000]]]
