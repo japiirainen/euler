@@ -1,3 +1,3 @@
 #!/usr/bin/env wolframscript -cloud -print
 
-"not implemented."
+i = 0; While[Fibonacci[i] < 10^999, i++]; i
